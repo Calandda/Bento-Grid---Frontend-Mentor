@@ -4,6 +4,10 @@
     src: url("./assets/fonts/static/DMSans-Medium.ttf");
 }
 
+.fontMedium{
+    font-size: 4rem;
+}
+
 .bgColorDarkPurple{
     background-color: hsl(256, 67%, 59%);
 }
@@ -29,15 +33,18 @@
 
 
 .borderCircle{
-    border-radius: 60px;
+    border-radius: 20px;
 }
-
+.boxShadow{
+    box-shadow: 0 0 5px 5px gray;
+}
 
 * {
     font-family: "DMSans-Regular";
 }
 body{
     display: grid;
+    gap: 3rem;
 }
 
 .sectionFiveStar{
@@ -62,16 +69,33 @@ body{
         font-size: 3rem;
         margin: 0;
     }
-
+.sectionMultipleAccount{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+    .sectionMultipleAccount > img{
+        width: 54rem;
+    }
+    .sectionMultipleAccount > p{
+        line-height: 3.5rem;
+    }
 /* MEDIA */
 
 @media screen and (orientation: portrait){
     body{
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         padding: 2rem;
     }
     .sectionFiveStar{
-        width: 100%;
+        width: 75.5vw;
         height: 45rem;
+    }
+    .sectionMultipleAccount{
+  
+
     }
 }
