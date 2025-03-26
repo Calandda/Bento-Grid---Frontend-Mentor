@@ -7,9 +7,30 @@
 .fontMedium{
     font-size: 4rem;
 }
+.fontSmall{
+    font-size: 3rem;
+}
+.fontWeight500{
+    font-weight: 500;
+}
 
+.bgColorPurple{
+    background-color: hsl(254, 88%, 90%);
+}
 .bgColorDarkPurple{
     background-color: hsl(256, 67%, 59%);
+}
+.bgColorYellow{
+    background-color: hsl(31,66%,93%);
+}
+.bgColorDarkYellow{
+    background-color: hsl(39, 100%, 71%);
+}
+.bgColorWhite{
+    background-color: hsl(0, 0%, 100%);
+}
+.bgColorBlack{
+    background-color: hsl(0, 0%, 7%);
 }
 
 .colorPurple{
@@ -38,13 +59,16 @@
 .boxShadow{
     box-shadow: 0 0 5px 5px gray;
 }
+.borderPadding{
+    padding: 2rem 4rem;
+}
 
 * {
     font-family: "DMSans-Regular";
 }
 body{
     display: grid;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .sectionFiveStar{
@@ -72,13 +96,37 @@ body{
 .sectionMultipleAccount{
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+
 }
     .sectionMultipleAccount > img{
-        width: 54rem;
+        width: 50rem;
     }
     .sectionMultipleAccount > p{
         line-height: 3.5rem;
+    }
+.sectionConsistentSchedule{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    padding-bottom: 0;
+    line-height: 3.5rem;
+    margin: 0px;
+    align-items: flex-start;
+}
+    .sectionConsistentSchedule > p{
+        font-weight: 500;
+        font-size: 4rem;
+    }
+    .sectionConsistentSchedule > img{
+        width: 38rem;
+    }
+.sectionScheduleMedia{
+    display: flex;
+    flex-direction: column;
+}
+    .sectionScheduleMedia > p{
+        text-align: center;
+        line-height: 3rem;
     }
 /* MEDIA */
 
