@@ -4,6 +4,12 @@
     src: url("./assets/fonts/static/DMSans-Medium.ttf");
 }
 
+.fontExtraLarge{
+    font-size: 8rem;
+}
+.fontLarge{
+    font-size: 4.8rem;
+}
 .fontMedium{
     font-size: 4rem;
 }
@@ -13,6 +19,7 @@
 .fontWeight500{
     font-weight: 500;
 }
+
 
 .bgColorPurple{
     background-color: hsl(254, 88%, 90%);
@@ -31,6 +38,9 @@
 }
 .bgColorBlack{
     background-color: hsl(0, 0%, 7%);
+}
+.bgColorGray{
+    background-color: hsl(0,0%, 95%);
 }
 
 .colorPurple{
@@ -127,6 +137,39 @@ body{
     .sectionScheduleMedia > p{
         text-align: center;
         line-height: 3rem;
+    }
+.sectionFollowerGrowth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6rem;
+    padding-bottom: 0;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+    .sectionFollowerGrowth > img{
+        width: 38rem;
+    }
+    .sectionFollowerGrowth > p{
+        text-align: center;
+    }
+.sectionFasterGrowth{
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+    .sectionFasterGrowth > img{
+        width: 32rem;
+    }
+.sectionQuicker{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+    .sectionQuicker > img{
+        width: 32rem;
     }
 /* MEDIA */
 
