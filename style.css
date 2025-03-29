@@ -247,7 +247,7 @@ section{
     }
     body{
         padding-top: 1rem;
-        height: 80%;
+        height: 84%;
         display: grid;
         grid-template-areas:
         "quicker        fiveStar        fiveStar            scheduleMedia"
@@ -264,7 +264,7 @@ section{
         "writeContent   fasterGrowth    followerGrowth      followerGrowth"
         "writeContent   fasterGrowth    followerGrowth      followerGrowth";
         grid-template-columns: repeat(4,14rem);
-        grid-template-rows: 4rem;
+        grid-template-rows: 8rem;
         grid-gap: 1.4rem;
     }
     .sectionFiveStar{
@@ -316,10 +316,32 @@ section{
         }
     .sectionFollowerGrowth{
         grid-area: followerGrowth;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        gap: 0.5rem;
     }
+        .sectionFollowerGrowth > p{
+            font-size: 2rem;
+        }
+        .sectionFollowerGrowth > img{
+            width: 20rem;
+        }
     .sectionFasterGrowth{
         grid-area: fasterGrowth;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
     }
+        .sectionFasterGrowth > p{
+            margin: 0;
+            padding: 0;
+        }
+        .sectionFasterGrowth > img{
+            margin: 0;
+            padding: 0;
+            width: 90%;
+        }
     .sectionQuicker{
         grid-area: quicker;
         display: flex;
