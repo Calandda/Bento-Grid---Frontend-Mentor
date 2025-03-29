@@ -57,10 +57,13 @@
     font-family: "DMSans-Regular";
 }
 
+section{
+    overflow: hidden;
+}
 
 /* MEDIA */
 
-@media screen and (orientation: portrait){
+@media all and (orientation: portrait){
     .fontExtraLarge{
         font-size: 8rem;
     }
@@ -80,6 +83,9 @@
     .borderPadding{
         padding: 2rem 4rem;
     }
+    html{
+        font-size: 6px;
+    }
 
     body{
         display: flex;
@@ -90,7 +96,6 @@
         gap: 2rem;
     }
     .sectionFiveStar{
-        width: 75.5vw;
         height: 45rem;
         display: flex;
         flex-direction: column;
@@ -198,7 +203,8 @@
             width: 38rem;
         }
 }
-@media screen and (orientation: landscape){
+
+@media all and (orientation: landscape){
     .temporarySize{
         width: 2rem;
     }
@@ -218,7 +224,7 @@
         font-weight: 500;
     }
     .borderPadding{
-        padding: 2rem 2rem;
+        padding: 1.4rem ;
     }
     .lineHeightExtraExtraHigh{
         line-height: 1rem;
@@ -241,8 +247,7 @@
     }
     body{
         padding-top: 1rem;
-        width: 60vw;
-        height: 90vh;
+        height: 80%;
         display: grid;
         grid-template-areas:
         "quicker        fiveStar        fiveStar            scheduleMedia"
@@ -258,12 +263,9 @@
         "writeContent   fasterGrowth    followerGrowth      followerGrowth"
         "writeContent   fasterGrowth    followerGrowth      followerGrowth"
         "writeContent   fasterGrowth    followerGrowth      followerGrowth";
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 6rem;
-        grid-gap: 2rem;
-    }
-    section{
-        overflow: hidden;
+        grid-template-columns: repeat(4,14rem);
+        grid-template-rows: 4rem;
+        grid-gap: 1.4rem;
     }
     .sectionFiveStar{
         display: flex;
@@ -287,9 +289,21 @@
     .sectionMultipleAccount{
         grid-area: multipleAccount;
     }
+        .sectionMultipleAccount > img{
+            width: 100%;
+        }
     .sectionConsistentSchedule{
         grid-area: consistentSchedule;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
+        .sectionConsistentSchedule > p{
+            margin: 0;
+        }
+        .sectionConsistentSchedule > img{
+            width: 100%;
+        }
     .sectionScheduleMedia{
         grid-area: scheduleMedia;
         display: flex;
@@ -298,7 +312,7 @@
         padding-bottom: 1.4rem;
     }
         .sectionScheduleMedia > img{
-            width: 21rem;
+            width: 20rem;
         }
     .sectionFollowerGrowth{
         grid-area: followerGrowth;
@@ -318,5 +332,11 @@
         }
     .sectionContent{
         grid-area: writeContent;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
+        .sectionContent > img{
+            width: 99%;
+        }
 }
