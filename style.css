@@ -4,23 +4,6 @@
     src: url("./assets/fonts/static/DMSans-Medium.ttf");
 }
 
-.fontExtraLarge{
-    font-size: 8rem;
-}
-.fontLarge{
-    font-size: 4.8rem;
-}
-.fontMedium{
-    font-size: 4rem;
-}
-.fontSmall{
-    font-size: 3rem;
-}
-.fontWeight500{
-    font-weight: 500;
-}
-
-
 .bgColorPurple{
     background-color: hsl(254, 88%, 90%);
 }
@@ -76,133 +59,212 @@
 * {
     font-family: "DMSans-Regular";
 }
-body{
-    display: grid;
-    gap: 2rem;
-}
 
-.sectionFiveStar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 5rem;
-    gap: 2rem;
-}
-    .pFiveStarMain{        
-        font-size: 7rem;
-        font-weight: 500;
-        text-align: center;
-        margin: 2rem;
-        line-height: 6rem;
-    }
-    .sectionFiveStar > img{
-        height: 5.5rem;
-    }
-    .pFiveStarSub{
-        font-size: 3rem;
-        margin: 0;
-    }
-.sectionMultipleAccount{
-    display: flex;
-    flex-direction: column;
 
-}
-    .sectionMultipleAccount > img{
-        width: 50rem;
-    }
-    .sectionMultipleAccount > p{
-        line-height: 3.5rem;
-    }
-.sectionConsistentSchedule{
-    display: flex;
-    flex-direction: column;
-    font-weight: 500;
-    padding-bottom: 0;
-    line-height: 3.5rem;
-    margin: 0px;
-    align-items: flex-start;
-}
-    .sectionConsistentSchedule > p{
-        font-weight: 500;
-        font-size: 4rem;
-    }
-    .sectionConsistentSchedule > img{
-        width: 38rem;
-    }
-.sectionScheduleMedia{
-    display: flex;
-    flex-direction: column;
-}
-    .sectionScheduleMedia > p{
-        text-align: center;
-        line-height: 3rem;
-    }
-.sectionFollowerGrowth{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 6rem;
-    padding-bottom: 0;
-    padding-left: 10rem;
-    padding-right: 10rem;
-}
-    .sectionFollowerGrowth > img{
-        width: 38rem;
-    }
-    .sectionFollowerGrowth > p{
-        text-align: center;
-    }
-.sectionFasterGrowth{
-    padding-bottom: 4rem;
-    padding-top: 4rem;
-}
-    .sectionFasterGrowth > img{
-        width: 32rem;
-    }
-.sectionQuicker{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    padding-top: 4rem;
-    padding-bottom: 6rem;
-}
-    .sectionQuicker > header{
-        line-height: 4.5rem;
-    }
-    .sectionQuicker > img{
-        width: 32rem;
-    }
-.sectionContent{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-    .sectionContent > header{
-        line-height: 4.5rem;
-    }
-    .sectionContent > img{
-        width: 38rem;
-    }
 /* MEDIA */
 
 @media screen and (orientation: portrait){
+    .fontExtraLarge{
+        font-size: 8rem;
+    }
+    .fontLarge{
+        font-size: 4.8rem;
+    }
+    .fontMedium{
+        font-size: 4rem;
+    }
+    .fontSmall{
+        font-size: 3rem;
+    }
+    .fontWeight500{
+        font-weight: 500;
+    }
+
     body{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
         padding: 2rem;
+        gap: 2rem;
     }
     .sectionFiveStar{
         width: 75.5vw;
         height: 45rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 5rem;
+        gap: 2rem;
+    }
+        .pFiveStarMain{        
+            font-size: 7rem;
+            font-weight: 500;
+            text-align: center;
+            margin: 2rem;
+            line-height: 6rem;
+        }
+        .sectionFiveStar > img{
+            height: 5.5rem;
+        }
+        .pFiveStarSub{
+            font-size: 3rem;
+            margin: 0;
+        }
+    .sectionMultipleAccount{
+        display: flex;
+        flex-direction: column;
+    
+    }
+        .sectionMultipleAccount > img{
+            width: 50rem;
+        }
+        .sectionMultipleAccount > p{
+            line-height: 3.5rem;
+        }
+    .sectionConsistentSchedule{
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+        padding-bottom: 0;
+        line-height: 3.5rem;
+        margin: 0px;
+        align-items: flex-start;
+    }
+        .sectionConsistentSchedule > p{
+            font-weight: 500;
+            font-size: 4rem;
+        }
+        .sectionConsistentSchedule > img{
+            width: 38rem;
+        }
+    .sectionScheduleMedia{
+        display: flex;
+        flex-direction: column;
+    }
+        .sectionScheduleMedia > p{
+            text-align: center;
+            line-height: 3rem;
+        }
+    .sectionFollowerGrowth{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 6rem;
+        padding-bottom: 0;
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+        .sectionFollowerGrowth > img{
+            width: 38rem;
+        }
+        .sectionFollowerGrowth > p{
+            text-align: center;
+        }
+    .sectionFasterGrowth{
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+    }
+        .sectionFasterGrowth > img{
+            width: 32rem;
+        }
+    .sectionQuicker{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding-top: 4rem;
+        padding-bottom: 6rem;
+    }
+        .sectionQuicker > header{
+            line-height: 4.5rem;
+        }
+        .sectionQuicker > img{
+            width: 32rem;
+        }
+    .sectionContent{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+        .sectionContent > header{
+            line-height: 4.5rem;
+        }
+        .sectionContent > img{
+            width: 38rem;
+        }
+}
+@media screen and (orientation: landscape){
+    .temporarySize{
+        width: 2rem;
+        height: 2rem;
+    }
+    .fontExtraLarge{
+        font-size: 3rem;
+    }
+    .fontLarge{
+        font-size: 2rem;
+    }
+    .fontMedium{
+        font-size: 1.5rem;
+    }
+    .fontSmall{
+        font-size: 1rem;
+    }
+    .fontWeight500{
+        font-weight: 500;
+    }
+    html{
+        width: 99vw;
+        height: 99vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body{
+        padding-top: 1rem;
+        width: 60vw;
+        height: 90vh;
+        display: grid;
+        grid-template-areas:
+        "quicker        fiveStar        fiveStar            scheduleMedia"
+        "quicker        fiveStar        fiveStar            scheduleMedia"
+        "quicker        multipleAccount consistentSchedule  scheduleMedia"
+        "writeContent   multipleAccount consistentSchedule  scheduleMedia"
+        "writeContent   multipleAccount consistentSchedule  scheduleMedia"
+        "writeContent   fasterGrowth    followerGrowth      followerGrowth";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2rem;
+        grid-gap: 2rem;
+    }
+    section{
+        overflow: hidden;
+    }
+    .sectionFiveStar{
+        grid-area: fiveStar;
     }
     .sectionMultipleAccount{
-  
-
+        grid-area: multipleAccount;
+    }
+    .sectionConsistentSchedule{
+        grid-area: consistentSchedule;
+    }
+    .sectionScheduleMedia{
+        grid-area: scheduleMedia;
+    }
+    .sectionFollowerGrowth{
+        grid-area: followerGrowth;
+    }
+    .sectionFasterGrowth{
+        grid-area: fasterGrowth;
+    }
+    .sectionQuicker{
+        grid-area: quicker;
+    }
+    .sectionContent{
+        grid-area: writeContent;
     }
 }
